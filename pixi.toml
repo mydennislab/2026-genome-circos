@@ -1,0 +1,16 @@
+[project]
+name = "genome-circos"
+version = "0.1.0"
+description = "Publication-quality circular chromosome ideogram with density tracks and SD links"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64"]
+
+[dependencies]
+python = ">=3.10"
+numpy = ">=1.24"
+matplotlib = ">=3.7"
+pycirclize = ">=1.0"
+
+[tasks]
+generate-test-data = "python example/generate_test_data.py"
+example = { cmd = "python plot_circos.py --chrom-sizes example/chrom.sizes --centromere example/centromeres.bed --tidk example/tidk.tsv --gaps example/gaps.bed --gff example/genes.gff3 --repeatmasker example/repeats.out --segdups example/segdups.bedpe --gc example/gc.bed --t2t example/t2t.tsv -o example/output -t 'Example Circos'", depends-on = ["generate-test-data"] }

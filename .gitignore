@@ -1,0 +1,8 @@
+*.png
+*.pdf
+!example/output_circos.png
+.pixi/
+__pycache__/
+pixi.lock
+test.sh
+test_*
