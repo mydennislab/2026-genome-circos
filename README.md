@@ -90,3 +90,9 @@ From outer to inner ring:
 6. **SD regions** — purple rectangles + intra/inter-chr link arcs in center
 
 Tracks auto-hide when their input is not provided.
+
+## Citation
+
+If you use this tool in your work, please cite:
+
+> Abuelanin M, Kaya G, Lake JA, Lambert C, Wu MV, Berendzen K, Krasheninnikova K, Wood JMD, Solomon NG, Donaldson ZR, Bales KL, Howe K, Korlach J, Manoli DS, Tollkuhn J, Dennis MY. Single-library chromosome-scale diploid assemblies of vole genomes resolve a species-specific duplication implicated in pair bonding. *bioRxiv* 2026. doi: [10.64898/2026.03.13.711624](https://doi.org/10.64898/2026.03.13.711624)
